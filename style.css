@@ -1,3 +1,487 @@
+.highlight1 {
+  color: red; /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+
+.highlight3 {
+  color: rgb(255, 157, 0); /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+
+.highlight2 {
+  color: rgb(191, 0, 255); /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+#main-header {
+  background-color: blue; /* 只有這個唯一的標頭會變藍色背景 */
+}
+#main-header2 {
+  background-color: rgb(255, 0, 115); /* 只有這個唯一的標頭會變藍色背景 */
+}
+.highlight4 {
+  color: rgb(0, 255, 208); /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+<p>
+今天的天氣真是太棒了，天空出現了
+<!-- 用 span 把「彩虹」包起來，方便之後上色 -->
+<span style="color: red; font-weight: bold;">美麗的彩虹</span>！
+</p>
+<a href="https://www.instagram.com/hanyi.1021/" target="_blank">Hanyi's IG page</a>
+<head>
+    <!-- 引入一個叫做 style.css 的衣服檔案來幫網頁變漂亮 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一個漂亮網頁</title>
+
+    <!-- 1. 裝上瀏覽器分頁的小圖示 (Favicon) -->
+    <!-- type 屬性會根據你的圖片格式改變，例如 image/x-icon 或 image/png -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- 2. 匯入外部的 style.css 衣服檔案 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>歡迎來到我的網頁！</h1>
+        <p>這是一個經過 <span>精心設計</span> 的段落文字。</p>
+        <button>點擊我有驚喜</button>
+    </main>
+
+</body>
+</html>
+/* 1. 設定整個網頁的背景與字型 */
+body {
+    background-color: #f4f7f6; /* 舒服的淺灰綠色背景 */
+    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; /* 微軟正黑體 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 讓內容靠左 */
+    margin: 0;
+}
+
+/* 2. 幫主內容區塊穿衣服，變成一張白色的漂亮卡片 */
+main {
+    background-color: #ffffff; /* 純白背景 */
+    padding: 30px;
+    border-radius: 12px; /* 圓角效果 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 淡淡的卡片陰影 */
+    text-align: center;
+}
+
+/* 3. 標題顏色 */
+h1 {
+    color: #2c3e50; /* 深藍灰色 */
+    margin-bottom: 15px;
+}
+
+/* 4. 還記得 <span> 嗎？單獨幫特定文字畫螢光筆重點 */
+p span {
+    background-color: #fff3cd; /* 螢光黃背景 */
+    color: #856404; /* 深咖啡色字 */
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* 5. 幫按鈕設計漂亮的樣式 */
+button {
+    background-color: #3498db; /* 亮藍色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer; /* 滑鼠滑過去會變成「小手」 */
+    transition: background-color 0.3s; /* 變色時的平滑動畫 */
+}
+
+/* 滑鼠移到按鈕上時會變深藍色 */
+button:hover {
+    background-color: #2980b9;
+}
+<head>
+    <!-- 設定基準網址 -->
+    <base href=" https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/">
+</head>
+<body>
+    <!-- 因為有設定 base，瀏覽器會自動把路徑補全為： -->
+    <!-- https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/500px-Cat_November_2010-1a.jpg-->
+    <img src="500px-Cat_November_2010-1a.jpg " alt="小貓">
+</body>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一個漂亮網頁</title>
+
+    <!-- 1. 裝上瀏覽器分頁的小圖示 (Favicon) -->
+    <!-- type 屬性會根據你的圖片格式改變，例如 image/x-icon 或 image/png -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- 2. 匯入外部的 style.css 衣服檔案 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>歡迎來到我的網頁！</h1>
+        <p>這是一個經過 <span>精心設計</span> 的段落文字。</p>
+        <button>點擊我有驚喜</button>
+    </main>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一個漂亮網頁</title>
+
+    <!-- 1. 裝上瀏覽器分頁的小圖示 (Favicon) -->
+    <!-- type 屬性會根據你的圖片格式改變，例如 image/x-icon 或 image/png -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- 2. 匯入外部的 style.css 衣服檔案 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>歡迎來到我的網頁！</h1>
+        <p>這是一個經過 <span>精心設計</span> 的段落文字。</p>
+        <button>點擊我有驚喜</button>
+    </main>
+
+</body>
+</html>.highlight1 {
+  color: red; /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+
+.highlight3 {
+  color: rgb(255, 157, 0); /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+
+.highlight2 {
+  color: rgb(191, 0, 255); /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+#main-header {
+  background-color: blue; /* 只有這個唯一的標頭會變藍色背景 */
+}
+#main-header2 {
+  background-color: rgb(255, 0, 115); /* 只有這個唯一的標頭會變藍色背景 */
+}
+.highlight4 {
+  color: rgb(0, 255, 208); /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+<p>
+今天的天氣真是太棒了，天空出現了
+<!-- 用 span 把「彩虹」包起來，方便之後上色 -->
+<span style="color: red; font-weight: bold;">美麗的彩虹</span>！
+</p>
+<a href="https://www.instagram.com/hanyi.1021/" target="_blank">Hanyi's IG page</a>
+<head>
+    <!-- 引入一個叫做 style.css 的衣服檔案來幫網頁變漂亮 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一個漂亮網頁</title>
+
+    <!-- 1. 裝上瀏覽器分頁的小圖示 (Favicon) -->
+    <!-- type 屬性會根據你的圖片格式改變，例如 image/x-icon 或 image/png -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- 2. 匯入外部的 style.css 衣服檔案 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>歡迎來到我的網頁！</h1>
+        <p>這是一個經過 <span>精心設計</span> 的段落文字。</p>
+        <button>點擊我有驚喜</button>
+    </main>
+
+</body>
+</html>
+/* 1. 設定整個網頁的背景與字型 */
+body {
+    background-color: #f4f7f6; /* 舒服的淺灰綠色背景 */
+    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; /* 微軟正黑體 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 讓內容靠左 */
+    margin: 0;
+}
+
+/* 2. 幫主內容區塊穿衣服，變成一張白色的漂亮卡片 */
+main {
+    background-color: #ffffff; /* 純白背景 */
+    padding: 30px;
+    border-radius: 12px; /* 圓角效果 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 淡淡的卡片陰影 */
+    text-align: center;
+}
+
+/* 3. 標題顏色 */
+h1 {
+    color: #2c3e50; /* 深藍灰色 */
+    margin-bottom: 15px;
+}
+
+/* 4. 還記得 <span> 嗎？單獨幫特定文字畫螢光筆重點 */
+p span {
+    background-color: #fff3cd; /* 螢光黃背景 */
+    color: #856404; /* 深咖啡色字 */
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* 5. 幫按鈕設計漂亮的樣式 */
+button {
+    background-color: #3498db; /* 亮藍色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer; /* 滑鼠滑過去會變成「小手」 */
+    transition: background-color 0.3s; /* 變色時的平滑動畫 */
+}
+
+/* 滑鼠移到按鈕上時會變深藍色 */
+button:hover {
+    background-color: #2980b9;
+}
+<head>
+    <!-- 設定基準網址 -->
+    <base href=" https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/">
+</head>
+<body>
+    <!-- 因為有設定 base，瀏覽器會自動把路徑補全為： -->
+    <!-- https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/500px-Cat_November_2010-1a.jpg-->
+    <img src="500px-Cat_November_2010-1a.jpg " alt="小貓">
+</body>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一個漂亮網頁</title>
+
+    <!-- 1. 裝上瀏覽器分頁的小圖示 (Favicon) -->
+    <!-- type 屬性會根據你的圖片格式改變，例如 image/x-icon 或 image/png -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- 2. 匯入外部的 style.css 衣服檔案 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>歡迎來到我的網頁！</h1>
+        <p>這是一個經過 <span>精心設計</span> 的段落文字。</p>
+        <button>點擊我有驚喜</button>
+    </main>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一個漂亮網頁</title>
+
+    <!-- 1. 裝上瀏覽器分頁的小圖示 (Favicon) -->
+    <!-- type 屬性會根據你的圖片格式改變，例如 image/x-icon 或 image/png -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- 2. 匯入外部的 style.css 衣服檔案 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>歡迎來到我的網頁！</h1>
+        <p>這是一個經過 <span>精心設計</span> 的段落文字。</p>
+        <button>點擊我有驚喜</button>
+    </main>
+
+</body>
+</html>.highlight1 {
+  color: red; /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+
+.highlight3 {
+  color: rgb(255, 157, 0); /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+
+.highlight2 {
+  color: rgb(191, 0, 255); /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+#main-header {
+  background-color: blue; /* 只有這個唯一的標頭會變藍色背景 */
+}
+#main-header2 {
+  background-color: rgb(255, 0, 115); /* 只有這個唯一的標頭會變藍色背景 */
+}
+.highlight4 {
+  color: rgb(0, 255, 208); /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+<p>
+今天的天氣真是太棒了，天空出現了
+<!-- 用 span 把「彩虹」包起來，方便之後上色 -->
+<span style="color: red; font-weight: bold;">美麗的彩虹</span>！
+</p>
+<a href="https://www.instagram.com/hanyi.1021/" target="_blank">Hanyi's IG page</a>
+<head>
+    <!-- 引入一個叫做 style.css 的衣服檔案來幫網頁變漂亮 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一個漂亮網頁</title>
+
+    <!-- 1. 裝上瀏覽器分頁的小圖示 (Favicon) -->
+    <!-- type 屬性會根據你的圖片格式改變，例如 image/x-icon 或 image/png -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- 2. 匯入外部的 style.css 衣服檔案 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>歡迎來到我的網頁！</h1>
+        <p>這是一個經過 <span>精心設計</span> 的段落文字。</p>
+        <button>點擊我有驚喜</button>
+    </main>
+
+</body>
+</html>
+/* 1. 設定整個網頁的背景與字型 */
+body {
+    background-color: #f4f7f6; /* 舒服的淺灰綠色背景 */
+    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; /* 微軟正黑體 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 讓內容靠左 */
+    margin: 0;
+}
+
+/* 2. 幫主內容區塊穿衣服，變成一張白色的漂亮卡片 */
+main {
+    background-color: #ffffff; /* 純白背景 */
+    padding: 30px;
+    border-radius: 12px; /* 圓角效果 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 淡淡的卡片陰影 */
+    text-align: center;
+}
+
+/* 3. 標題顏色 */
+h1 {
+    color: #2c3e50; /* 深藍灰色 */
+    margin-bottom: 15px;
+}
+
+/* 4. 還記得 <span> 嗎？單獨幫特定文字畫螢光筆重點 */
+p span {
+    background-color: #fff3cd; /* 螢光黃背景 */
+    color: #856404; /* 深咖啡色字 */
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* 5. 幫按鈕設計漂亮的樣式 */
+button {
+    background-color: #3498db; /* 亮藍色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer; /* 滑鼠滑過去會變成「小手」 */
+    transition: background-color 0.3s; /* 變色時的平滑動畫 */
+}
+
+/* 滑鼠移到按鈕上時會變深藍色 */
+button:hover {
+    background-color: #2980b9;
+}
+<head>
+    <!-- 設定基準網址 -->
+    <base href=" https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/">
+</head>
+<body>
+    <!-- 因為有設定 base，瀏覽器會自動把路徑補全為： -->
+    <!-- https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/500px-Cat_November_2010-1a.jpg--> 
+    <img src="500px-Cat_November_2010-1a.jpg " alt="小貓"> 
+</body> 
+<!DOCTYPE html> 
+<html lang="zh-Hant-TW"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>我的第一個漂亮網頁</title> 
+ 
+    <!-- 1. 裝上瀏覽器分頁的小圖示 (Favicon) --> 
+    <!-- type 屬性會根據你的圖片格式改變，例如 image/x-icon 或 image/png --> 
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+ 
+    <!-- 2. 匯入外部的 style.css 衣服檔案 --> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+ 
+    <main> 
+        <h1>歡迎來到我的網頁！</h1> 
+        <p>這是一個經過 <span>精心設計</span> 的段落文字。</p> 
+        <button>點擊我有驚喜</button> 
+    </main> 
+ 
+</body> 
+</html> 
+<!DOCTYPE html> 
+<html lang="zh-Hant-TW"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>我的第一個漂亮網頁</title> 
+ 
+    <!-- 1. 裝上瀏覽器分頁的小圖示 (Favicon) --> 
+    <!-- type 屬性會根據你的圖片格式改變，例如 image/x-icon 或 image/png --> 
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+ 
+    <!-- 2. 匯入外部的 style.css 衣服檔案 --> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+ 
+    <main> 
+        <h1>歡迎來到我的網頁！</h1> 
+        <p>這是一個經過 <span>精心設計</span> 的段落文字。</p> 
+        <button>點擊我有驚喜</button> 
+    </main> 
+ 
+</body> 
+</html>讓文字靠左
 /* 整個網頁 */
 html,
 body {
