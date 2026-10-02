@@ -28,3 +28,27 @@
     <!-- 引入一個叫做 style.css 的衣服檔案來幫網頁變漂亮 -->
     <link rel="stylesheet" href="style.css">
 </head>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一個漂亮網頁</title>
+
+    <!-- 1. 裝上瀏覽器分頁的小圖示 (Favicon) -->
+    <!-- type 屬性會根據你的圖片格式改變，例如 image/x-icon 或 image/png -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- 2. 匯入外部的 style.css 衣服檔案 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>歡迎來到我的網頁！</h1>
+        <p>這是一個經過 <span>精心設計</span> 的段落文字。</p>
+        <button>點擊我有驚喜</button>
+    </main>
+
+</body>
+</html>
