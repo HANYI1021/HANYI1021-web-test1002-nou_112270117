@@ -1,51 +1,30 @@
-/* =========================
-   整個網頁
-========================= */
-
+/* 整個網頁 */
+html,
 body {
+    margin: 0;
+    padding: 20px;
     background-color: #f4f7f6;
     font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
 
-    margin: 0;
-    padding: 20px;
-
-    /* 全部文字靠左 */
-    text-align: left;
+    /* 強制全部靠左 */
+    text-align: left !important;
 }
 
 
-/* =========================
-   所有文字靠左
-========================= */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-pre,
-blockquote,
-div,
-section,
-article,
-header,
-footer,
-aside {
-    text-align: left;
+/* 所有元素的文字都靠左 */
+* {
+    text-align: left !important;
 }
 
 
-/* =========================
-   主要內容
-========================= */
-
+/* 主要內容 */
 main {
-    background-color: #ffffff;
+    display: block;
+
+    width: auto;
+    max-width: none;
+
+    background-color: white;
 
     padding: 30px;
 
@@ -53,34 +32,54 @@ main {
 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
-    /* ⭐ 強制靠左 */
-    text-align: left;
-
-    width: auto;
+    text-align: left !important;
 }
 
 
-/* =========================
-   標題
-========================= */
-
-h1 {
-    color: #2c3e50;
-}
-
-h2 {
-    color: black;
-}
-
-h3 {
-    color: black;
+/* 標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: left !important;
 }
 
 
-/* =========================
-   彩色文字
-========================= */
+/* 段落 */
+p {
+    text-align: left !important;
+}
 
+
+/* 清單 */
+ul,
+ol {
+    text-align: left !important;
+    padding-left: 40px;
+}
+
+
+/* 清單文字 */
+li {
+    text-align: left !important;
+}
+
+
+/* 程式碼 */
+pre {
+    text-align: left !important;
+}
+
+
+/* 引用 */
+blockquote {
+    text-align: left !important;
+}
+
+
+/* 彩色文字 */
 .highlight1 {
     color: red;
 }
@@ -98,69 +97,38 @@ h3 {
 }
 
 
-/* =========================
-   標頭
-========================= */
-
+/* 第一個標題 */
 #main-header {
     background-color: blue;
-    color: black;
-    text-align: left;
     padding: 5px;
 }
 
+
+/* 第二個標題 */
 #main-header2 {
     background-color: rgb(255, 0, 115);
-    text-align: left;
     padding: 10px;
 }
 
 
-/* =========================
-   清單
-========================= */
-
-ul,
-ol {
-    padding-left: 40px;
-    text-align: left;
-}
-
-li {
-    text-align: left;
-}
-
-
-/* =========================
-   彩虹文字
-========================= */
-
+/* 彩虹 */
 p span {
-    background-color: #fff3cd;
     color: red;
+    font-weight: bold;
+    background-color: #fff3cd;
     padding: 2px 6px;
     border-radius: 4px;
-    font-weight: bold;
 }
 
 
-/* =========================
-   按鈕
-========================= */
-
+/* 按鈕 */
 button {
     background-color: #3498db;
-
     color: white;
-
     border: none;
-
     padding: 10px 20px;
-
     font-size: 16px;
-
     border-radius: 6px;
-
     cursor: pointer;
 }
 
