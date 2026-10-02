@@ -68,6 +68,16 @@ body {
     /* 距離瀏覽器左邊、上面一點距離 */
     padding: 30px;
 }
+main h1,
+main h2,
+main h3,
+main p,
+main ul,
+main ol,
+main pre,
+main blockquote {
+    text-align: left;
+}
 
 /* 2. 幫主內容區塊穿衣服，變成一張白色的漂亮卡片 */
 main {
