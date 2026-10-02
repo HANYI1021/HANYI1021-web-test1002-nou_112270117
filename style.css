@@ -85,7 +85,7 @@ main {
     padding: 30px;
     border-radius: 12px; /* 圓角效果 */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 淡淡的卡片陰影 */
-    text-align: center;
+    text-align: left;
 }
 
 /* 3. 標題顏色 */
