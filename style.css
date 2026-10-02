@@ -59,7 +59,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* 讓內容垂直置中 */
+    height: 100vh; /* 讓內容靠左 */
     margin: 0;
 }
 
