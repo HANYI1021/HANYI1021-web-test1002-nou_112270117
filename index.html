@@ -16,6 +16,10 @@
     <!-- 引入一個叫做 style.css 的衣服檔案來幫網頁變漂亮 -->
     <link rel="stylesheet" href="style.css">
 </head>
+<head>
+    <!-- 設定基準網址 -->
+    <base href=" https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/">
+</head>
 
 </head>
 
@@ -164,6 +168,11 @@
         <p>這是一個經過 <span>精心設計</span> 的段落文字。</p>
         <button>點擊我有驚喜</button>
     </main>
+<body>
+    <!-- 因為有設定 base，瀏覽器會自動把路徑補全為： -->
+    <!-- https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/500px-Cat_November_2010-1a.jpg-->
+    <img src="500px-Cat_November_2010-1a.jpg " alt="小貓">
+</body>
 
 </body>
 </html>
