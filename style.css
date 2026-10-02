@@ -54,13 +54,19 @@
 </html>
 /* 1. 設定整個網頁的背景與字型 */
 body {
-    background-color: #f4f7f6; /* 舒服的淺灰綠色背景 */
-    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; /* 微軟正黑體 */
+    background-color: #f4f7f6;
+    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+
+    /* 讓內容靠左上 */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* 讓內容靠左 */
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    min-height: 100vh;
     margin: 0;
+
+    /* 距離瀏覽器左邊、上面一點距離 */
+    padding: 30px;
 }
 
 /* 2. 幫主內容區塊穿衣服，變成一張白色的漂亮卡片 */
