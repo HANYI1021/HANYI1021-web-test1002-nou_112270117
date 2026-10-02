@@ -1,0 +1,20 @@
+.highlight1 {
+  color: red; /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+
+.highlight3 {
+  color: rgb(255, 157, 0); /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+
+.highlight2 {
+  color: rgb(191, 0, 255); /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
+#main-header {
+  background-color: blue; /* 只有這個唯一的標頭會變藍色背景 */
+}
+#main-header2 {
+  background-color: rgb(255, 0, 115); /* 只有這個唯一的標頭會變藍色背景 */
+}
+.highlight4 {
+  color: rgb(0, 255, 208); /* 讓所有 class 為 highlight 的文字都變紅色 */
+}
