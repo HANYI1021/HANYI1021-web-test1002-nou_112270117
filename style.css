@@ -18,3 +18,8 @@
 .highlight4 {
   color: rgb(0, 255, 208); /* 讓所有 class 為 highlight 的文字都變紅色 */
 }
+<p>
+    今天的天氣真是太棒了，天空出現了
+    <!-- 用 span 把「彩虹」包起來，方便之後上色 -->
+    <span style="color: red; font-weight: bold;">美麗的彩虹</span>！
+</p>
