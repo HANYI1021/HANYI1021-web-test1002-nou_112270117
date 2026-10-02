@@ -103,3 +103,12 @@ button {
 button:hover {
     background-color: #2980b9;
 }
+<head>
+    <!-- 設定基準網址 -->
+    <base href=" https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/">
+</head>
+<body>
+    <!-- 因為有設定 base，瀏覽器會自動把路徑補全為： -->
+    <!-- https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/500px-Cat_November_2010-1a.jpg-->
+    <img src="500px-Cat_November_2010-1a.jpg " alt="小貓">
+</body>
