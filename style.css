@@ -7,8 +7,35 @@ body {
     font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
 
     margin: 0;
-    padding: 0;
+    padding: 20px;
 
+    /* 全部文字靠左 */
+    text-align: left;
+}
+
+
+/* =========================
+   所有文字靠左
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+pre,
+blockquote,
+div,
+section,
+article,
+header,
+footer,
+aside {
     text-align: left;
 }
 
@@ -19,31 +46,17 @@ body {
 
 main {
     background-color: #ffffff;
+
     padding: 30px;
+
     border-radius: 12px;
+
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
-    /* ⭐ 文字靠左 */
+    /* ⭐ 強制靠左 */
     text-align: left;
 
-    /* 讓白色區塊佔大部分畫面 */
     width: auto;
-}
-
-
-/* =========================
-   所有主要文字靠左
-========================= */
-
-main h1,
-main h2,
-main h3,
-main p,
-main ul,
-main ol,
-main pre,
-main blockquote {
-    text-align: left;
 }
 
 
@@ -53,7 +66,14 @@ main blockquote {
 
 h1 {
     color: #2c3e50;
-    margin-bottom: 15px;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: black;
 }
 
 
@@ -84,25 +104,15 @@ h1 {
 
 #main-header {
     background-color: blue;
+    color: black;
     text-align: left;
+    padding: 5px;
 }
 
 #main-header2 {
     background-color: rgb(255, 0, 115);
     text-align: left;
-}
-
-
-/* =========================
-   span 重點文字
-========================= */
-
-p span {
-    background-color: #fff3cd;
-    color: #856404;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-weight: bold;
+    padding: 10px;
 }
 
 
@@ -112,7 +122,25 @@ p span {
 
 ul,
 ol {
+    padding-left: 40px;
     text-align: left;
+}
+
+li {
+    text-align: left;
+}
+
+
+/* =========================
+   彩虹文字
+========================= */
+
+p span {
+    background-color: #fff3cd;
+    color: red;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 
@@ -122,6 +150,7 @@ ol {
 
 button {
     background-color: #3498db;
+
     color: white;
 
     border: none;
@@ -133,8 +162,6 @@ button {
     border-radius: 6px;
 
     cursor: pointer;
-
-    transition: background-color 0.3s;
 }
 
 button:hover {
