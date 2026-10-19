@@ -49,7 +49,15 @@
         <p>這是一個經過 <span>精心設計</span> 的段落文字。</p>
         <button>點擊我有驚喜</button>
     </main>
+<!-- JavaScript 程式碼 -->
+    <script>
+        const button = document.getElementById("surpriseButton");
+        const message = document.getElementById("message");
 
+        button.addEventListener("click", function() {
+            message.textContent = "你好！歡迎來到 Hanyi's 網站！🎉";
+        });
+    </script>
 </body>
 </html>
 /* 1. 設定整個網頁的背景與字型 */
