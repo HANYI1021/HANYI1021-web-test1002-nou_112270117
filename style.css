@@ -42,11 +42,14 @@
     <!-- 2. 匯入外部的 style.css 衣服檔案 -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<!-- JavaScript 程式碼 -->
+    <script>
+        const button = document.getElementById("surpriseButton");
+        const message = document.getElementById("message");
 
-    <main>
-        <h1>歡迎來到我的網頁！</h1>
-        <p>這是一個經過 <span>精心設計</span> 的段落文字。</p>
+        button.addEventListener("click", function() {
+            message.textContent = "你好！歡迎來到 Hanyi's 網站！🎉";
+        });
         <button>點擊我有驚喜</button>
     </main>
 <!-- JavaScript 程式碼 -->
