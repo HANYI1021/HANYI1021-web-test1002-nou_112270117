@@ -16,7 +16,56 @@
 </head>
 
 <body>
-   
+   <div class="container">
+    <h3>智慧室溫節能檢測</h3>
+    <label for="tempInput">請輸入目前的室內溫度 (°C)：</label>
+    <br>
+    <input type="number" id="tempInput" placeholder="例如: 28" min="-10" max="50">
+    <button onclick="checkTemperature()">送出檢查</button>
+
+    <!-- 用來動態顯示結果的區塊 -->
+    <div id="result"></div>
+</div>
+<script>
+document.write("第 1 個 JavaScript 程式");
+
+// 當使用者點擊按鈕時，會觸發這個函式
+function checkTemperature() {
+    // 1. 取得輸入框中的溫度數值，並轉換成數字型態
+    const temperature = Number(document.getElementById('tempInput').value);
+    const resultDiv = document.getElementById('result');
+
+    // 檢查輸入是否為空或不合法的數字
+    if (isNaN(temperature) || document.getElementById('tempInput').value === '') {
+        resultDiv.innerHTML = "❌ 請輸入有效的溫度數字！";
+        resultDiv.style.color = "red";
+        return; // 結束函式，不往下執行
+    }
+
+    // 2. 核心條件控制架構 (if / else if / else)
+    if (temperature >= 30) {
+        // 條件 A：溫度大於或等於 30 度
+        resultDiv.innerHTML = "🥵 目前非常炎熱！建議開啟冷氣，並設定在 26~28 度搭配電風扇節能。";
+        resultDiv.style.color = "#d9534f"; // 紅色提示
+    } 
+    else if (temperature >= 26 && temperature < 30) {
+        // 條件 B：溫度介於 26 到 29 度之間
+        resultDiv.innerHTML = "⛅ 稍微有點悶熱。建議開啟電風扇即可，保持空氣流通。";
+        resultDiv.style.color = "#f0ad4e"; // 橘色提示
+    } 
+    else if (temperature >= 16 && temperature < 26) {
+        // 條件 C：溫度介於 16 到 25 度之間
+        resultDiv.innerHTML = "😎 舒適的溫度！不需要開啟冷氣或電扇，最適合節能省電。";
+        resultDiv.style.color = "#5cb85c"; // 綠色提示
+    } 
+    else {
+        // 條件 D：上述條件皆不吻合（即低於 16 度）
+        resultDiv.innerHTML = "🥶 天氣寒冷。請適時添加衣物保暖，注意防寒！";
+        resultDiv.style.color = "#5bc0de"; // 藍色提示
+    }
+}
+</script>
+
     <main>
         <h1>歡迎來到 Hanyi's 網站！</h1>
 
