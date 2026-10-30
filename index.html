@@ -53,6 +53,18 @@
     </script>
      <script>
       document.write("第 1 個 JavaScript 程式");
+         // var 的缺點示範
+if (true) {
+    var x = 10;
+}
+console.log(x); // 印出 10 (外面竟然抓得到！變數洩漏了)
+
+// let / const 的安全示範
+if (true) {
+    let y = 20;
+}
+console.log(y); // ❌ 報錯：y is not defined (安全鎖定在大括號內)
+
     </script>
 </body>
 </html>
