@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  </head>
+<body>
+    <script>
+      // var 的缺點示範
+if (true) {
+    var x = 10;
+}
+console.log(x); // 印出 10 (外面竟然抓得到！變數洩漏了)
+
+    </script>
+</body>
+</html>
